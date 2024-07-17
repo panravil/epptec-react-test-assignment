@@ -50,7 +50,7 @@ const Feed = ({ feedPosts, itemsPerPage }) => {
               <>
                 <span
                   className={
-                    currentPage == index + 1 ? "p-2 rounded bg-gray-300" : "p-2"
+                    currentPage === index + 1 ? "p-2 rounded bg-gray-300" : "p-2"
                   }
                   onClick={() => handlePagination(index)}
                   key={index}

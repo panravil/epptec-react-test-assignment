@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const User = ({ users }) => {
   const { userId } = useParams();
-  const user = users.find((user) => user.id == userId);
+  const user = users.find((user) => user.id === userId);
   const navigate = useNavigate();
 
   const redirectToPreviousPage = () => {

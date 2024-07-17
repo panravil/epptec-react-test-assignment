@@ -74,7 +74,6 @@ const Detail = ({ itemsPerPage }) => {
       <Outlet />
     </div>
   );
-  return <></>;
 };
 
 export default Detail;

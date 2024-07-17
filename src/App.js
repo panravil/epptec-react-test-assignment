@@ -40,14 +40,14 @@ const App = () => {
 
   posts.forEach((element) => {
     for (let i = 0; i < users.length; i++) {
-      if (element.userId == users[i].id) {
+      if (element.userId === users[i].id) {
         element.username = users[i].name;
       }
     }
     let countComments = 0;
 
     for (let i = 0; i < comments.length; i++) {
-      if (element.id == comments[i].postId) {
+      if (element.id === comments[i].postId) {
         countComments++;
       }
     }
